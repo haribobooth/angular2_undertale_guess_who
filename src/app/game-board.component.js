@@ -26,7 +26,8 @@ var GameBoard = (function () {
 GameBoard = __decorate([
     core_1.Component({
         selector: 'game-board',
-        templateUrl: './game-board.component.html'
+        templateUrl: './game-board.component.html',
+        styleUrls: ['./game-board.component.css']
     }),
     __metadata("design:paramtypes", [character_service_1.CharacterService])
 ], GameBoard);

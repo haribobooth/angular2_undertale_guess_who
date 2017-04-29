@@ -5,7 +5,8 @@ import { Character } from './models/Character';
 
 @Component({
   selector: 'game-board',
-  templateUrl: './game-board.component.html'
+  templateUrl: './game-board.component.html',
+  styleUrls: [ './game-board.component.css']
 })
 
 export class GameBoard {
