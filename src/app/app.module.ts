@@ -5,6 +5,7 @@ import { AppComponent }  from './app.component';
 
 import { CharacterService } from './character.service';
 import { GameBoard } from './game-board.component';
+import { CharacterCard } from './character-card.component';
 
 @NgModule({
   imports:      [
@@ -12,7 +13,8 @@ import { GameBoard } from './game-board.component';
   ],
   declarations: [
     AppComponent,
-    GameBoard
+    GameBoard,
+    CharacterCard
   ],
   providers: [ CharacterService ],
   bootstrap: [ AppComponent ]

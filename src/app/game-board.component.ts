@@ -16,7 +16,7 @@ export class GameBoard {
 
   ngOnInit(): void {
     this.characterService.getCharacters((returnedData: any) => {
-      this.characters = JSON.stringify(returnedData)
+      this.characters = returnedData
     });
   }
 }

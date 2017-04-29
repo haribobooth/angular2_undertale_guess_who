@@ -10,6 +10,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var character_service_1 = require("./character.service");
 var game_board_component_1 = require("./game-board.component");
+var character_card_component_1 = require("./character-card.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,7 +23,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            game_board_component_1.GameBoard
+            game_board_component_1.GameBoard,
+            character_card_component_1.CharacterCard
         ],
         providers: [character_service_1.CharacterService],
         bootstrap: [app_component_1.AppComponent]

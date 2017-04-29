@@ -9,26 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var character_service_1 = require("./character.service");
-var GameBoard = (function () {
-    function GameBoard(characterService) {
-        this.characterService = characterService;
+var Character_1 = require("./models/Character");
+var CharacterCard = (function () {
+    function CharacterCard() {
     }
-    ;
-    GameBoard.prototype.ngOnInit = function () {
-        var _this = this;
-        this.characterService.getCharacters(function (returnedData) {
-            _this.characters = returnedData;
-        });
-    };
-    return GameBoard;
+    return CharacterCard;
 }());
-GameBoard = __decorate([
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Character_1.Character)
+], CharacterCard.prototype, "character", void 0);
+CharacterCard = __decorate([
     core_1.Component({
-        selector: 'game-board',
-        templateUrl: './game-board.component.html'
-    }),
-    __metadata("design:paramtypes", [character_service_1.CharacterService])
-], GameBoard);
-exports.GameBoard = GameBoard;
-//# sourceMappingURL=game-board.component.js.map
+        selector: 'character-card',
+        templateUrl: './character-card.component.html',
+        styleUrls: ['./character-card.component.css']
+    })
+], CharacterCard);
+exports.CharacterCard = CharacterCard;
+//# sourceMappingURL=character-card.component.js.map
